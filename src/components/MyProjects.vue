@@ -3,7 +3,7 @@
     <div class="container mx-auto">
       <h1
         class="justify-end flex items-center mb-6 text-lg title"
-        data-aos="fade-left" data-aos-duration="1000"
+        data-aos="fade-down" data-aos-duration="1000"
       >
         <span>My Projects <i class="bx bxs-pencil ml-2"></i></span>
       </h1>
@@ -12,7 +12,7 @@
           class="project-item p-4 flex flex-col justify-between items-center h-full"
           v-for="(item, index) in projects"
           :key="index"
-          data-aos="fade-down-right" :data-aos-duration="`${index*250}`"
+          data-aos="fade-up" :data-aos-duration="`${index*250}`"
         >
           <span class="project-title">{{ item.title }}</span>
           <div class="mt-4">
@@ -155,6 +155,22 @@ export default {
             "TailwindCSS",
             "Canvas",
             "AT UI",
+            "Less"
+          ],
+        },
+
+                {
+          title: "Stackoverflow Clone",
+          review_link: "https://indeed-clone-tr.herokuapp.com/",
+          source_code: "https://github.com/hasanmuzak/indeed-clone-tr",
+          description:
+            'Stackoverflow redesigned clone project. ',
+          tags: [
+            "Python",
+            "VueJS",
+            "TailwindCSS",
+            "FastAPI",
+            "Ant UI",
             "Less"
           ],
         },
